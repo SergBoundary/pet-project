@@ -1,0 +1,4 @@
+.idea
+/vendor/
+/src/public/css/bootstrap.min.css
+/src/public/js/bootstrap.bundle.min.js

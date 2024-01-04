@@ -1,6 +1,6 @@
 <?php
 
-namespace core;
+namespace App\core;
 
 /**
  * Description of TSinglton

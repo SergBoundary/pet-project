@@ -1,6 +1,6 @@
 <?php
 
-namespace core;
+namespace App\core;
 
 /**
  * Description of Db
@@ -16,7 +16,7 @@ class Db {
     public static $queries = [];
 
     public function __construct() {
-        $db = require ROOT.'/config/config_db.php';
+        $db = require APP.'/config/config_db.php';
         $options = [
             \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
