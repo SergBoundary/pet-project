@@ -1,21 +1,28 @@
 <?php
-
+session_start();
 
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
 
-define('WWW', __DIR__);
-define('ROOT', dirname(__DIR__));
-define('CORE', dirname(__DIR__).'/core');
+define("DEBUG", 1);
 
-require_once ('../tools/Tools.php');
+require_once 'autoload.php';
+require_once ROOT . '/vendor/autoload.php';
+require_once(TOOLS . '/Tools.php');
 
-spl_autoload_register(function($class) {
-    $file = ROOT.'/'.str_replace('\\', '/',$class).'.php';
-    if(is_file($file)) {
-        require_once $file;
-    }
-});
+use App\Core\App;
+use App\UserExperience\Navigation\Router;
 
-echo 'URL: '.$query;
+new App;
 
-$model = new core\Model();
+new Router();
+
+Router::dispatch($query);
+
+//use App\UserInterface\Pages\EditImage;
+//
+//echo EditImage::getEditImage('avatar');
+
+
+//use App\UserInterface\Pages\EditText;
+//
+//echo EditText::getEditMessage();

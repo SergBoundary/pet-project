@@ -1,6 +1,6 @@
 <?php
 
-namespace App\services\Storage;
+namespace App\UserExperience\Storage;
 
 /**
  * Description of TSinglton

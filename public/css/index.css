@@ -1,0 +1,106 @@
+/* Header image */
+@media (max-width: 575.98px) {
+  header .img-sm, header .img-md, header .img-lg { display: none; }
+  header .img-xs { display: block; position: relative; }
+  .header-user {
+    /*width: 80%;*/
+    height: 80%;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    bottom: 0;
+    right: auto;
+    text-align: left;
+  }
+  .header-user img {
+    border-radius: 50%;
+    height: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header .img-xs, header .img-md, header .img-lg { display: none; }
+  header .img-sm { display: block; position: relative; }
+  :root { font-size: 0.8rem; }
+  .header-user {
+    /*width: 70%;*/
+    height: 70%;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    right: 28px;
+    text-align: right;
+  }
+  .header-user img {
+    border-radius: 50%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container { width: 750px; }
+  header .img-xs, header .img-sm, header .img-lg { display: none; }
+  header .img-md { display: block; position: relative; }
+  .header-user {
+    /*width: 70%;*/
+    height: 70%;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    right: 38px;
+    text-align: right;
+  }
+  .header-user img {
+    border-radius: 50%;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container { width: 970px; }
+  header .img-xs, header .img-sm, header .img-md { display: none; }
+  header .img-lg { display: block; position: relative; }
+  .header-user {
+    /*width: 70%;*/
+    height: 70%;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    right: 38px;
+    text-align: right;
+  }
+  .header-user img {
+    border-radius: 50%;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container { width: 1170px; }
+  header .img-xs, header .img-sm, header .img-md { display: none; }
+  header .img-lg { display: block; position: relative; }
+  .header-user {
+    /*width: 70%;*/
+    height: 70%;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    right: 38px;
+    text-align: right;
+  }
+  .header-user img {
+    border-radius: 50%;
+    height: 100%;
+  }
+}
+
